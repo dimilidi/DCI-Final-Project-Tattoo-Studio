@@ -1,0 +1,13 @@
+{
+  "name": "tattoostudio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+ 
+    "watch-sass": "sass src/scss:src/css --watch"
+  },
+  "author": "",
+  "license": "ISC"
+}

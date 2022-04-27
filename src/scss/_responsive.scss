@@ -1,0 +1,109 @@
+// Smartphone/Tablet
+@include media-s {
+
+    .studio-info-container:first-of-type {
+        padding-right: 2rem;
+    }
+}
+
+
+// Tablet
+
+@include media-md {
+
+    .menu-btn, .menu {
+        visibility: hidden;
+    }
+
+    .nav {
+        visibility: visible;
+
+        .menu-nav {
+            display: block;
+            transform: translate(0);
+            height: 100%;
+            background: transparent;
+            text-align: right;
+
+            &_item {
+                display: inline;
+                padding-right: 1.5rem;
+            }
+
+            &_link {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .studio-info-container:first-of-type {
+        padding-right: 6rem;
+    }
+
+    .contact-list {
+        @include flex($direct:row);
+        flex-wrap: wrap;
+        width: 100%;
+
+       p {
+            width: 16rem;
+        }
+    }
+
+    .footer {
+        width: 100%;
+        height: 20%;
+        padding: 2rem;
+        border-top: 1px solid $lila;
+        
+        &-nav {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            width: 100%;
+            gap: 2rem;
+        }
+    }
+}
+
+
+// Desktop
+
+@include media-lg {
+
+    .home {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        .logo, .home-article {
+            width: 25%
+        }
+    }
+
+    .studio-info-container:last-of-type{
+
+        .studio-info-box {
+            width: 50%;
+        } 
+    }
+
+    .contact {
+        @include flex($direct:row);
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .contact-list {
+        width: 40%;
+    }
+
+    .contact .contact-form {
+        width: 50%;
+    }
+}
+
+

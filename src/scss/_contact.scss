@@ -1,0 +1,130 @@
+
+.contact-box {
+    height: 100%;
+    padding: 4rem 0 0;
+    text-align: center;
+
+    &-title {
+        width: 100%;
+        height: 35vh;
+        background:
+        linear-gradient(
+            to right,
+            rgba($primary-color, 0.3),
+            rgba($primary-color, 0.9)
+        ),
+        url('../../images/bg1.jpg') center center;
+        background-size: cover;
+        border-bottom: 1px solid $lila;
+        @include flex;
+    
+        &-heading { 
+            text-transform: uppercase;
+            font-size: 3rem;
+        }
+    }
+
+    .contact {
+        padding: 5rem 3rem;
+        background: linear-gradient(to bottom, $primary-color, $dark-color);
+        
+        &-list {
+            justify-content: space-evenly;
+            align-items: flex-start;
+            text-align: left;
+            font-size: 1.7rem;
+        }
+
+        &-list:last-of-type {
+            margin-bottom: 2rem
+        }
+    
+        &-item {
+            list-style: none;
+            color: $lila;
+            font-size: 1.1rem;
+    
+            h2 {
+                text-transform: uppercase;   
+                color: $lila-light;
+            }
+    
+            a {
+                display: block;
+                font-size: 1rem;  
+            } 
+    
+            p {
+                color: $secondary-color;
+                padding: 1.2rem 0;
+                line-height: 1.7rem;
+            }  
+        }
+
+        &-form {
+           width: 100%;
+           font-size: 1.2rem;
+        }
+
+        &-article {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 2px solid white;
+            border-radius: 10px;
+            line-height: 1.7rem;
+            text-align: left;
+    
+            p {
+                line-height: 1.5rem;
+                color: $secondary-color;
+                padding: 0.5rem;
+            }
+        }
+    
+        .form {
+            width: 100%;
+        
+            input, textarea, button {
+                width: 100%;
+                font-size: 1.1rem;
+                padding: 1rem 0.5rem ;
+                margin-bottom: 0.5rem ;
+                border-radius: 10px;
+                border: none;
+            }
+        
+            input {
+                height: 3rem;
+            }
+    
+            input:focus, textarea:focus {
+                outline: 3px solid $lila-light;
+                border: none;
+                background: transparentize( $secondary-color, 0.1);
+            }
+    
+            ::placeholder {
+                padding-left: 0.5rem;  
+                font-family: Arial, Helvetica, sans-serif;
+            }
+    
+            button {
+                color: $secondary-color;
+                background-color: $lila-light;
+                border: none;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+    
+            button:hover {
+                opacity: 0.8;
+                cursor: pointer;
+                @include transition-ease
+            }
+        }
+    }    
+}
+
+
+

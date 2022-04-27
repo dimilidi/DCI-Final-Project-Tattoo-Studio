@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Kontakt</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <span class="menu-text">Menü</span> 
+         </div>
+        <div class="menu-btn">
+            <span class="menu-btn_burger"></span>
+        </div>
+
+        <nav class="nav">
+            <ul class="menu-nav">
+                <li class="menu-nav_item ">
+                   <a href="../index.html" class="menu-nav_link">
+                       Home
+                   </a>
+                </li>
+                <li class="menu-nav_item ">
+                   <a href="studio.html" class="menu-nav_link">
+                       Studio
+                   </a>
+                </li>
+                <li class="menu-nav_item ">
+                   <a href="gallerie.html" class="menu-nav_link">
+                       Gallerie
+                   </a>
+                </li>
+                <li class="menu-nav_item ">
+                   <a href="tattoo-artists.html" class="menu-nav_link">
+                       Tätowierer
+                   </a>
+                </li>
+                <li class="menu-nav_item active">
+                   <a href="contact.html" class="menu-nav_link">
+                       Kontakt
+                   </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-box">
+
+            <section class="contact-box-title">
+                <h2 class="contact-box-title-heading">Kontakt</h2>
+            </section>
+
+            <section class="contact">
+                <article class="contact-list">
+
+                    <div class="contact-list-one">
+
+                        <div class="contact-item">
+                            <h2>Telefon:</h2>
+                            <p>
+                                <a onclick="return anruf2('tel:+4941016495083');" href="tel:+4941016495083" rel="nofollow">041016495083</a>
+                            </p>
+                        </div>
+
+                        <div class="contact-item">
+                            <h2>Email:</h2>
+                            <p>
+                                <a onclick="return mail('mailto:info@tattoo-chase.de');" href="mailto:info@tattoo-chase.de" rel="nofollow">info@tattoo-chase.de</a>
+                            </p> 
+                        </div>
+
+                        <div class="contact-item">
+                            <h2>Adresse:</h2>
+                            <p>
+                                Tattoo Studio Chase <br>
+                                Erste Straße, <br>
+                                12345 Hamburg, <br>
+                                Deutschland <br>
+                                <a href="https://maps.google.com/" target="_blank">Finde uns auf Google Maps</a>
+                            </p>   
+                        </div>
+                    </div>
+
+                    <div class="contact-list-two">
+
+                        <div class="contact-item">
+                            <h2>Öffnungszeiten:</h2>
+                            <p>Montag: Geschlossen <br>
+                                Dienstag: 12:00-18:00 Uhr <br>
+                                Mittwoch: 12:00-18:00 Uhr <br>
+                                Donnerstag: 12:00-14:00 Uhr <br>
+                                Freitag: 12:00-18:00 Uhr <br>
+                                Samstag: 10:00-16:00 Uhr <br>
+                                Sonntag: Geschlossen <br>
+                            </p>
+                        </div>
+
+                        <div class="contact-item">
+                            <h2>Parken:</h2>
+                            <p>
+                                Parken kannst Du im Parkhaus Beispielplatz für 1€/Std. Die Zufahrt zur Tiefgarage erfolgt über die Beispile Straße, direkt gegenüber vom Tattoostudio.
+                                <a href="https://maps.google.com/" target="_blank">Zum Parkhaus navigieren</a>
+                            </p>
+                        </div>   
+                    </div>
+                    
+                </article>
+
+                <section class="contact-form">
+
+                    <article class="contact-article">
+                        <p>Liebe Tattoo Freunde,</p>
+                        <p>Für Beratungstermine erreicht ihr uns am besten telefonisch unter
+                        <a onclick="return anruf2('tel:+4941016495083');" href="tel:+4941016495083" rel="nofollow">041016495083</a>
+                        während unserer Öffnungszeiten.
+                        </p>
+                        <p>Lieben Gruß <br>
+                            Euer Tattoo Chase Team
+                        </p>
+                    </article>
+        
+                    <form class="form" action="https://formspree.io/f/xeqnzkap" method="POST" target="_blank">
+                        <label for="name"></label>
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+        
+                        <label for="email"></label>
+                        <input type="text" id="email" name="email" placeholder="E-Mail-Adresse" required>
+        
+                        <label for="phone"></label>
+                        <input type="text" id="phone" name="phone" placeholder="Telefon" required>
+        
+                        <label for="message"></label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Nachricht"></textarea>
+        
+                        <button type="submit">Senden</button>
+        
+                    </form>
+
+                </section>   
+                
+            </section>
+            
+        </section>
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer-nav">
+
+            <div class="footer-nav-item">
+                <h4 class="footer-nav-item-heading">Adresse & Kontakt</h4>
+                <p class="footer-nav-item-text">
+                    Tattoo Studio Chase <br>
+                    Erste Straße, <br>
+                    12345 Hamburg, <br>
+                    Deutschland <br>
+                </p>
+                <h4 class="footer-nav-item-text">Telefon:
+                    <a onclick="return anruf2('tel:+4941016495083');" href="tel:+4941016495083" rel="nofollow">041016495083</a>
+                </h4>
+                <h4 class="footer-nav-item-text">Email:
+                    <a onclick="return mail('mailto:info@tattoo-chase.de');" href="mailto:info@tattoo-chase.de" rel="nofollow">info@tattoo-chase.de</a>
+                </h4>
+            </div>
+
+            <div class="footer-nav-item">
+                <h4 class="footer-nav-item-heading" >Wichtige Links</h4>
+                <ul class="footer-nav-item-list">
+                    <li><a href="tattoo-artists.html">Tätowierer</a></li>
+                    <li><a href="studio.html">Studio</a></li>
+                    <li><a href="http://tattoo-chase.blogspot.com/2011/11/blog-post_12.html" target="_blank">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-nav-item">
+                <h4 class="footer-nav-item-heading">Styles</h4>
+                <ul class="footer-nav-item-list">
+                     <li><a href="maori.html">Maori</a></li>
+                     <li><a href="dot.html">Dotwork</a></li>
+                     <li><a href="realistic.html">Realistic Tattoos</a></li>
+                     <li><a href="portrait.html">Portrait</a></li>
+                     <li><a href="cover-up.html">Cover Up</a></li>
+                     <li><a href="animals.html">Animals</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="social-icons">
+            <a href="https://de-de.facebook.com/" target="_blank">
+                <i class="fa-brands fa-facebook fa-2x"></i>
+            </a>
+            <a href="https://twitter.com/?lang=bg " target="_blank">
+                <i class="fa-brands fa-twitter fa-2x"></i>
+            </a>
+            <a href="https://www.instagram.com/"  target="_blank">
+                <i class="fa-brands fa-instagram fa-2x"></i>
+            </a>
+            <a href="https://www.youtube.com/?hl=bg"  target="_blank">
+                <i class="fa-brands fa-youtube fa-2x"></i>
+            </a>    
+        </div>
+
+        <span>&copy; Copyright 2022</span>
+
+    </footer>
+
+    <script src="https://kit.fontawesome.com/d51e19476b.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

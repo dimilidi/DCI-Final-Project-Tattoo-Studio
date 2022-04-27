@@ -1,0 +1,125 @@
+.artists {
+    @include flex;
+    height: 100%;
+    padding: 5rem 0 0;
+    text-align: center;
+
+    &-title {
+        width: 100%;
+        height: 35vh;
+        background:
+        linear-gradient(
+            to right,
+            rgba($primary-color, 0.3),
+            rgba($primary-color, 0.9)
+        ),
+        url('../../images/bg1.jpg') center center;
+        background-size: cover;
+        border-bottom: 1px solid $lila;
+        @include flex;
+    
+        &-heading { 
+            text-transform: uppercase;
+            font-size: 3rem;
+        }
+    }
+
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;   
+        gap: 1rem
+    }
+
+    .artist{
+        @include flex;
+        gap: 0.5rem;
+        width: 370px;
+        height: 570px;
+    
+        .picture-1 {
+            background-image: url('../../images/artist1.jpg');
+            }
+
+        .picture-2 {
+            background-image: url('../../images/a1.jpg');
+            }
+
+        .picture-3 {
+            background-image: url('../../images/ar1.jpg');
+            }
+
+        .picture-4 {
+            background-image: url('../../images/a.jpg');
+            }
+
+        .picture-5 {
+            background-image: url('../../images/artist1.jpg');
+            }
+
+        .picture-6 {
+            background-image: url('../../images/a1.jpg');
+            }
+
+        .picture-7 {
+            background-image: url('../../images/ar1.jpg');
+            }
+        
+        &-box {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-size: center center;
+            background-repeat: no-repeat;
+            margin-top: 0.5rem;
+            outline: 5px solid $primary-color;
+        }
+
+        &-text {
+            width: 100%;
+            height: 300px;
+            font-size: 1.1rem; 
+            background-color: $dark-color;
+            
+            h2 {
+                font-weight: 600;
+                padding: 1rem 0 0;
+                color: $lila;
+            }
+
+            p {
+                line-height: 1.5rem;
+                text-align: center;
+                padding: 1rem;
+            }    
+        }
+    } 
+
+    &-info {
+        width: 100%;
+        padding: 6rem 0;
+        font-size: 1.1rem;
+        gap: 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+        justify-items: center;
+        background-image: linear-gradient(to bottom, $primary-color, $dark-color);
+    
+        &-box {
+            width: 80%;
+
+            h2 {
+                padding: 1rem 0;
+                color: $lila;
+                text-align: left;
+            }
+
+            p {
+                line-height: 1.5rem;
+                text-align: justify;
+            }
+        }
+    }
+}
